@@ -13,6 +13,7 @@
 
 .container img {
     width: 280px;
+    height: auto;
 }
 
 .contents {
@@ -20,6 +21,10 @@
     display: inline-block;
     position: relative;
     border: 1px solid #979797;
+}
+
+.contents h2 {
+    font-size: 20px;
 }
 
 .contents h4 {
@@ -38,4 +43,25 @@
 }
 .flow p {
     font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .contents {
+        width: 100%;
+        display: block;
+        
+    }
+    
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contents:nth-child(2) {
+        margin: 20px 0;
+    }
 }
