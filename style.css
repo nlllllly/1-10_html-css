@@ -46,14 +46,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+    
     .container {
         width: 90%;
+        margin: 0 auto;
     }
     
     .contents {
         width: 100%;
         display: block;
-        
     }
     
     .container img {
